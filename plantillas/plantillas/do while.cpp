@@ -4,9 +4,9 @@ int main(){
     char loop = 'u';
     do
     {
-        cout<<"sabias que ya estas dentro de un loop? (y/n)"<<endl;
+        cout<<"sabias que ya estas dentro de un loop? (s/n)"<<endl;
         cin>>loop;
-    } while (loop!='y');
+    } while (loop!='s');
     
     cout<<"oh..."<<endl<<"bueno adios";
 
