@@ -11,6 +11,7 @@ int main (){
     srand(time(NULL));
     //declaracion de variables
     int culpable, arma, location, aux, memoria, tiempo;
+    char
     bool continuar = true;
     string basura ="basura";
     //inicialozacion de mapas    
@@ -18,7 +19,7 @@ int main (){
     int tutorialAncho = sizeof(tutorial) / sizeof(tutorial[0]);
     int tutorialAlto = sizeof(tutorial[0]) / sizeof(tutorial[0][0]);
     
-    char mapa[16][27]{{"                          "},{" +----+   +----+   +----+ "},{" | Hp |---| Tc |---| C  | "},{" |    |---|    |---|    | "},{" +----+   +----+   +----+ "},{"  | |       | |      | |  "},{" +----+   +----+     | |  "},{" | Dc |---| V  |-----+ |  "},{" |    |---|  I |-------+  "},{" +----+   +----+          "},{"            | |           "},{" +----------------------+ "},{" |          J           | "},{" |                      | "},{" +----------------------+ "},{"                          "}};
+    char mapa[16][27]{{"                          "},{" +----+   +----+   +----+ "},{" |h(1)|---|t(2)|---|c(3)| "},{" |    |---|    |---|    | "},{" +----+   +----+   +----+ "},{"  | |       | |      | |  "},{" +----+   +----+     | |  "},{" |d(4)|---|v(5)|-----+ |  "},{" |    |---|  I |-------+  "},{" +----+   +----+          "},{"            | |           "},{" +----------------------+ "},{" |          j(5)         | "},{" |                      | "},{" +----------------------+ "},{"                          "}};
     int mapaAncho = sizeof(mapa) / sizeof(mapa[0]);
     int mapaAlto = sizeof(mapa[0]) / sizeof(mapa[0][0]);
     //inicializacion de apecto aleatorio    
@@ -28,14 +29,15 @@ int main (){
     location = 0;
     memoria = location;
     tiempo = 0;
-    cout<<"dialogo introductorio"<<endl;
+    //inicio del tutorial, menu central
+    cout<<"dialogo introductorio (1,2,2,3,4)"<<endl;
     cin>>location;
     cin.ignore(1000, '\n');
 
   
     //tutorial
     do{
-        //clock atgain
+        //sistema de tiempo
         switch (tiempo)
         {
         case 0:
@@ -262,7 +264,7 @@ int main (){
         default:
             break;
         }
-        //map printing
+        //map printing tutorial
         for (int i = 0; i < tutorialAncho; i++){
             for (int j = 0; j < tutorialAlto; j++){
                 cout<<tutorial[i][j];
@@ -310,6 +312,7 @@ int main (){
             
             getline (cin, basura);
             cin.ignore(1000, '\n');
+
             cout<<"final cinematica"<<endl;
 
             tiempo=0;
@@ -320,13 +323,18 @@ int main (){
             location=memoria;
             break;
         }
+        system ("cls");
     } while (continuar == true);
     cout<<"final tutorial";
     location = 0;
     //actual game
+    system("cls");
+    cout<<"inicio de juego 1,2,3,4,5,6";
+    cin>>location;
+    cin.ignore(1000, '\n');
     do
     {
-    //clock sprite sheet
+        //clock sprite sheet
         switch (tiempo)
         {
         case 0:
@@ -553,28 +561,37 @@ int main (){
         default:
             break;
         }
-    //map printing
+        //map printing mapa
         for (int i = 0; i < mapaAncho; i++){
         for (int j = 0; j < mapaAlto; j++){
             cout<<mapa[i][j];
         }
         cout<<endl;
     }
-    //dialogue?    
+        //dialogue?    
         switch (location)
         {
         case 1:
-            continuar = false;
             break;
-        case 0:
-            memoria=location;
-            cout<<"dialogo vestibulo"<<endl;
-            cin>>location;
+        case 2:
             break;
         case 3:
             break;
         case 4:
             break;
+        case 5:
+            if(location != 5){
+                
+            }else{
+
+                cout<<"esperas en el vestibulo"
+                cin>>location;
+                cin.ignore(1000, '\n');
+            }
+            cout
+            break;
+        case 6:
+            break;    
         default:
             cout<<"Eso no es una opcion valida"<<endl;
             location=memoria;
