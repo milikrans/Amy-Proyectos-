@@ -34,15 +34,19 @@ int main (){
     case 0:
         elCuerpoTiene = " varias apunhaladas";
         break;
+
     case 1:
         elCuerpoTiene = " un gran golpe en la cabeza";
         break;
+
     case 2:
         elCuerpoTiene = " falta de oxigeno";
         break;
+
     default:
         cout<<"oh oh algo salio terriblemente mal, por favor reinicia el programa";
         break;
+
     }
     switch (culpable)
     {
@@ -51,17 +55,20 @@ int main (){
         verdadOMentiraCocinero="empeze a limpiar la cocina";
         verdadOMentiraJardinera="de las flores de la senhora Hudson";
         break;
+
     case 1:
         verdadOMentiraViuda="me puse a... dormir la siesta... antes del almuerzo, no dormi bien esta noche... pero cuando me desperte...";
         verdadOMentiraCocinero="prepare el almuerzo y se lo servi a la senhora Hudson";
         verdadOMentiraJardinera="de las flores de la senhora Hudson";
         break;
+
     case 2:
         verdadOMentiraViuda="me puse a... dormir la siesta... antes del almuerzo, no dormi bien esta noche... pero cuando me desperte...";
         verdadOMentiraCocinero="empeze a limpiar la cocina";
         verdadOMentiraJardinera="de las hortalizas que usa el cocinero, asi no tiene que estar llendo al mercado";
     default:
         break;
+
     }
     //inicio de arbol de deciciones    
     location = 0;
@@ -81,18 +88,23 @@ int main (){
         case 1:
             continuar= false;
             break;
+
         case 2:
             cout<<"usa los numeros para seleccionar una opcion de las cuales se te presentan y luego presiona enter para mandarla"<<endl;
             break;
+
         case 3:
             cout<<"juego realizado por Amy Cardenas Silva"<<endl;
             break;
+
         case 4:
             return 0;
             break;
+
         default:
             cout<<"seleccion invalida"<<endl;
             break;
+
         }
     }while(continuar == true);
     location=0;
@@ -117,6 +129,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 1:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -130,6 +143,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 2:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -143,6 +157,7 @@ int main (){
             cout<<" |      v      | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 3:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -156,6 +171,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 4:
             cout<<" +-------------+ \n";
             cout<<" |      ^      | \n";
@@ -169,6 +185,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 5:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -182,6 +199,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 6:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -195,6 +213,7 @@ int main (){
             cout<<" |      v      | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 7:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -208,6 +227,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 8:
             cout<<" +-------------+ \n";
             cout<<" |      ^      | \n";
@@ -221,6 +241,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 9:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -234,6 +255,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 10:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -247,6 +269,7 @@ int main (){
             cout<<" |      v      | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 11:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -260,6 +283,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
          case 12:
             cout<<" +-------------+ \n";
             cout<<" |      ^      | \n";
@@ -273,6 +297,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n"; 
             break;
+
         case 13:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -286,6 +311,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 14:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -299,6 +325,7 @@ int main (){
             cout<<" |      v      | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 15:
             cout<<" +-------------+ \n";
             cout<<" |             | \n";
@@ -312,6 +339,7 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         case 16:
             cout<<" +-------------+ \n";
             cout<<" |      ^      | \n";
@@ -325,8 +353,11 @@ int main (){
             cout<<" |             | \n";
             cout<<" +-------------+ \n";
             break;
+
         default:
+
             break;
+
         }
         //map printing tutorial
         for (int i = 0; i < tutorialAncho; i++){
@@ -366,6 +397,7 @@ int main (){
                location = 6; 
             }
             break;
+
         case 1:
             memoria=location;
             cout<<"tomas la linterna,";
@@ -375,6 +407,7 @@ int main (){
             tutorial[3][13]='I';
             location=5;
             break;
+
         case 2:
             memoria=location;
             cout<<"tomas el jarro con luciernagas,";
@@ -384,6 +417,7 @@ int main (){
             tutorial[3][13]='I';
             location=5;
             break;
+
         case 3:
             memoria=location;
             cout<<"tomas el farol,";
@@ -392,6 +426,7 @@ int main (){
             tutorial[3][13]='I';
             location=5;
             break;
+
         case 4:
             memoria=location;
             cout<<"tomas la antorcha,";
@@ -401,6 +436,7 @@ int main (){
             tutorial[3][13]='I';
             location=5;
             break;
+
         case 5:
             memoria=location;
             cout<<"pronto llegas al otro lado del pasillo solo para darte cueta que haz llegado a otra habitacion aparentemente vacia"<<endl;
@@ -417,6 +453,7 @@ int main (){
 
         case 6:
             return 0;
+
             break;
 
         default:
@@ -927,11 +964,13 @@ int main (){
                 location=13;
                 mapa[8][4]=' ';
                 mapa[3][4]='I';
+                break;
             case 3:
                 tiempo++;
                 location=0;
                 mapa[8][4]=' ';
                 mapa[8][13]='I';
+                break;
             default:
                 cout<<"opcion invalida"<<endl;
                 location=memoria;
@@ -1130,8 +1169,10 @@ int main (){
                     break;
                 case 1:
                     cout<<"fueron realizadas por un arma bastante grande y afilada"<<endl;
+                    break;
                 case 2:
                     cout<<"fueron realizadas por un arma poco afilada"<<endl;
+                    break;
                 default:
                     break;
                 }
@@ -1168,6 +1209,7 @@ int main (){
                 default:
                     break;
                 }
+                break;
             default:
                 break;
             }
@@ -1294,6 +1336,7 @@ int main (){
             cout<<"te quedaste sin tiempo"<<endl<<"final malo"<<endl<<"gracias por jugar"<<endl;
             getline (cin,basura);
             return 0;
+            break;
         default:
             cout<<"oopsie algo salio mal, regresandote :)"<<endl;
             location=memoria;
