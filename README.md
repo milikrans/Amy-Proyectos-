@@ -1,7 +1,8 @@
-# Zorritas
+# Protyectos
 El repositorio para nuestro(s) futuros proyectos
 
-[nombre del proyecto]
+RPVG basado en texto
+
 Amy Cárdenas
+
 1158
-:)
