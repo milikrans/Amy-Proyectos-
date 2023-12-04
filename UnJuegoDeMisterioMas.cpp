@@ -81,6 +81,7 @@ int main (){
         cout<<"(2) como jugar?"<<endl;
         cout<<"(3) creditos"<<endl;
         cout<<"(4) salir"<<endl;
+        cout<<"(5) accion misteriosa"<<endl;
         cin>>location;
         cin.ignore(1000, '\n');
         switch (location)
@@ -100,7 +101,11 @@ int main (){
         case 4:
             return 0;
             break;
-
+        
+        case 5:
+            cout<<":3"<<endl;
+            break;
+            
         default:
             cout<<"seleccion invalida"<<endl;
             break;
@@ -929,7 +934,7 @@ int main (){
                 break;
             case 2:
                 tiempo++;
-                location=3;
+                location=0;
                 mapa[3][22]=' ';
                 mapa[8][13]='I';
                 break;
